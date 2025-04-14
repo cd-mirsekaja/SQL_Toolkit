@@ -1,8 +1,10 @@
-# SQL_Toolkit/utils.py
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# SQL_Toolkit/src/SQL_Toolkit/sql_utils.py
 import pandas as pd
 import os
 
-def remove_database(db_file):
+def remove_database(db_file: str):
 	"""
 	Removes a database file if it exists.
 

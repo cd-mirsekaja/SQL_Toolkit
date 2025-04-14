@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "SQL_Toolkit"
+version = "0.1.0"
+authors = [
+	{ name="Ronja Rösner", email="ro.roesner@icloud.com" },
+]
+description = "A package for creating and accessing SQLite databases."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+	"os",
+	"sqlite3",
+	"pandas",
+	"csv"
+	""
+]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+]
+keywords = ["SQL", "SQLite", "Excel", "CSV"]
+license = "GPL-3.0-or-later"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Repository = "https://github.com/cd-mirsekaja/SQL_Toolkit"
+Issues = "https://github.com/cd-mirsekaja/SQL_Toolkit/issues"

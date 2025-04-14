@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SQL_Toolkit/src/SQL_Toolkit/read_sql.py
 
 import sqlite3, os
 

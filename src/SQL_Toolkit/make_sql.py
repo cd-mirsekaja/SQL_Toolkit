@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SQL_Toolkit/src/SQL_Toolkit/make_sql.py
 
 import pandas as pd
 import sqlite3, csv, os
 from .sql_utils import remove_database, infer_sqlite_type
 
-def excel_to_sqlite(input_file, db_file, remove_existing=False):
+def excel_to_sqlite(input_file: str, db_file: str, remove_existing: bool=False):
 	"""
-	Converts an Excel file to an SQLite database.
+	Converts an Excel file with any number of sheets to an SQLite database.
+	Each sheet is converted to a separate table in the database.
+	Each column in the sheet is converted to a column in the table.
 
 	Args:
 		input_file (str): Path to the Excel file.
@@ -61,7 +64,7 @@ def excel_to_sqlite(input_file, db_file, remove_existing=False):
 		print(f"An unexpected error occurred: {e}")
 
 
-def csv_to_sqlite(input_file, db_file, remove_existing=False):
+def csv_to_sqlite(input_file: str, db_file: str, remove_existing: bool=False):
 	"""
 	Converts a CSV file to an SQLite database.
 
